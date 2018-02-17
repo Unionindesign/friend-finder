@@ -1,1 +1,69 @@
-<h1>To be added</h1>
+<!DOCTYPE html>
+<html>
+  <head>
+    <!--Import Google Icon Font-->
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <!--Import materialize.css-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+
+    <!--Let browser know website is optimized for mobile-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>FriendFinder</title>
+    <style "text/css">
+        body {
+            background-color: #8EC5FC;
+            background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
+        }
+    </style>
+  </head>
+
+  <body>
+    <div class="container"> 
+        <div class="row wow animated fadeIn">
+                    <div class="col s12">
+                      <div class="card white darken-1">
+                        <div class="card-content">
+                          <span class="card-title">FriendFinder.com</span>
+                          <!-- <p>I am a very simple card. I am good at containing small bits of information.
+                          I am convenient because I require little markup to use effectively.</p> -->
+                          <h4 class ="center">Your new friends are waiting !</h4>
+                          <div class="carousel">
+                              <a class="carousel-item" href="#one!"><img src="https://www.betrendsetter.com/wp-content/uploads/2017/01/shag-with-waves-round-face-2.jpg"></a>
+                              <a class="carousel-item" href="#two!"><img src="https://i2-prod.mirror.co.uk/incoming/article5428573.ece/ALTERNATES/s615b/archetypal-female-_3249633c.jpg"></a>
+                              <a class="carousel-item" href="#three!"><img src="https://www.menshairstylestoday.com/wp-content/uploads/2016/10/Hairstyles-For-Square-Faces-Buzz-Cut.jpg"></a>
+                              <a class="carousel-item" href="#four!"><img src="https://i2.wp.com/therighthairstyles.com/wp-content/uploads/2014/03/10-side-hairstyle-for-a-square-face.jpg?w=500&ssl=1"></a>
+                              <a class="carousel-item" href="#five!"><img src="https://www.thejapanguy.com/wp-content/uploads/2017/04/Asian-Faces-Quiz-Fan-Bingbing-CHINESE.png"></a>
+                          </div>
+                          <h5 class="card-title center">Answer a few questions to find your best match!</h5>
+                          <a class="waves-effect waves-light btn" href="./survey.html"><i class="material-icons left">cast_connected</i>Go to Survey</a>
+                        </div>
+                    <div class="card-action">
+                        <a href="#">This is a link</a>
+                        <a href="#">This is a link</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+                    
+
+    <!--Import jQuery before materialize.js-->
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            $('.carousel').carousel();
+            autoplay();
+            function autoplay() {
+                $('.carousel').carousel('next');
+                setTimeout(autoplay, 4000);
+   
+            };
+            wow.init();
+        });
+    </script>
+  </body>
+</html>
+      
