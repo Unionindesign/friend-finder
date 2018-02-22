@@ -1,5 +1,5 @@
 //use dummy data to start...
-var friendData = [
+var friendsArray = [
     {
         "name":"Stephen Marshall",
         "image":"http://unionindesign.com/images/bodyshot.png",
@@ -18,4 +18,4 @@ var friendData = [
       }
 ];
 
-module.exports = friendData;
+module.exports = friendsArray;
