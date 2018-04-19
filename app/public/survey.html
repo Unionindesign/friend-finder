@@ -27,23 +27,24 @@
                     <span class="card-title">FriendFinder.com</span>
                     <h5 class ="center">Answer a few questions to find your most compatible friends:</h5>
                     <!-- FORM -->
-                    <form>
+                    <form class="form-control">
 
                             <div class="row">
-                                <div class="input-field col s4">
-                                    <input placeholder="ex. John Smithington" id="first_name" type="text" class="validate">
+                                <div class="input-field col s6">
+                                    <input placeholder="ex. John Smithington" id="name" type="text" class="validate">
                                     <label for="first_name">Name</label>
                                 </div>
-                                <div class="input-field col s8">
-                                        <input placeholder="http://myimage.com" id="img_link" type="text" class="validate">
-                                        <label for="first_name">Link to your image</label>
+                                <div class="input-field col s6">
+                                        <input placeholder="http://myimage.com" id="photo" type="text" class="validate">
+                                        <label for="photo">Link to your image</label>
                                 </div>
                             </div>
+                            
                             <!-- Start new question 1-->
                             <div class="row">
                                 <h5>Question 1: It bugs me when people get too hung up on something. Calm down!</h5>
                                 <div class="input-field col s4">
-                                    <select>
+                                    <select class="chosen-select form-control" id="q1">
                                         <option value="" disabled selected>Choose your option</option>
                                         <option value="1"> 1 (Strongly Disagree)</option>
                                         <option value="2"> 2</option>
@@ -58,7 +59,7 @@
                             <div class="row">
                                     <h5>Question 2: I feel like sometimes, you gotta put somebody in line.</h5>
                                     <div class="input-field col s4">
-                                        <select>
+                                        <select class="chosen-select form-control" id="q2">
                                             <option value="" disabled selected>Choose your option</option>
                                             <option value="1"> 1 (Strongly Disagree)</option>
                                             <option value="2"> 2</option>
@@ -73,7 +74,7 @@
                             <div class="row">
                                     <h5>Question 3: It's easy for me to express my feelings.</h5>
                                     <div class="input-field col s4">
-                                        <select>
+                                        <select class="chosen-select form-control" id="q3">
                                             <option value="" disabled selected>Choose your option</option>
                                             <option value="1"> 1 (Strongly Disagree)</option>
                                             <option value="2"> 2</option>
@@ -88,7 +89,7 @@
                             <div class="row">
                                     <h5>Question 4: I find it annoying when people talk too much.</h5>
                                     <div class="input-field col s4">
-                                        <select>
+                                        <select class="chosen-select form-control" id="q4">
                                             <option value="" disabled selected>Choose your option</option>
                                             <option value="1"> 1 (Strongly Disagree)</option>
                                             <option value="2"> 2</option>
@@ -103,7 +104,7 @@
                             <div class="row">
                                     <h5>Question 5: I'm usually the center of attention.</h5>
                                     <div class="input-field col s4">
-                                        <select>
+                                        <select class="chosen-select form-control" id="q5">
                                             <option value="" disabled selected>Choose your option</option>
                                             <option value="1"> 1 (Strongly Disagree)</option>
                                             <option value="2"> 2</option>
@@ -118,7 +119,7 @@
                             <div class="row">
                                     <h5>Question 6: I can be pretty quiet until someone engages me in conversation.</h5>
                                     <div class="input-field col s4">
-                                        <select>
+                                        <select class="chosen-select form-control" id="q6">
                                             <option value="" disabled selected>Choose your option</option>
                                             <option value="1"> 1 (Strongly Disagree)</option>
                                             <option value="2"> 2</option>
@@ -133,7 +134,7 @@
                             <div class="row">
                                     <h5>Question 7: I spontaneous and make rash decisions. Yolo!</h5>
                                     <div class="input-field col s4">
-                                        <select>
+                                        <select class="chosen-select form-control" id="q7">
                                             <option value="" disabled selected>Choose your option</option>
                                             <option value="1"> 1 (Strongly Disagree)</option>
                                             <option value="2"> 2</option>
@@ -148,7 +149,7 @@
                             <div class="row">
                                     <h5>Question 8: I tell everyone my life story</h5>
                                     <div class="input-field col s4">
-                                        <select>
+                                        <select class="chosen-select form-control" id="q8">
                                             <option value="" disabled selected>Choose your option</option>
                                             <option value="1"> 1 (Strongly Disagree)</option>
                                             <option value="2"> 2</option>
@@ -163,7 +164,7 @@
                             <div class="row">
                                     <h5>Question 9: I'm generally of a trusting nature, I'm willing to give anyone the benefit of the doubt.</h5>
                                     <div class="input-field col s4">
-                                        <select>
+                                        <select class="chosen-select form-control" id="q9">
                                             <option value="" disabled selected>Choose your option</option>
                                             <option value="1"> 1 (Strongly Disagree)</option>
                                             <option value="2"> 2</option>
@@ -176,9 +177,9 @@
                             </div>
                             <!-- Start new question 10 -->
                             <div class="row">
-                                    <h5>Question 10: I have don't like getting advise from people I don't know.</h5>
+                                    <h5>Question 10: I don't like getting advice from people I don't know.</h5>
                                     <div class="input-field col s4">
-                                        <select>
+                                        <select class="chosen-select form-control" id="q10">
                                             <option value="" disabled selected>Choose your option</option>
                                             <option value="1"> 1 (Strongly Disagree)</option>
                                             <option value="2"> 2</option>
@@ -190,14 +191,27 @@
                                     </div>
                             </div>
                         <div class="row">
-                            <a class="waves-effect waves-light btn" id="submit" action="#"><i class="material-icons left">cast_connected</i>Submit</a>
+                            <button class="waves-effect waves-light btn modal-trigger" data-target="resultsModal" id="submit" href="#resultsModal"><i class="material-icons left">cast_connected</i>Submit</button>
                         </div>
                     </form>
                 </div>
                     <div class="card-action">
-                        <h5 class="card-title center">Answer a few questions to find your best match!</h5>
-                        <a class="waves-effect waves-light btn" action="./public/survey.html"><i class="material-icons left">send</i>Go to Survey</a>
+                        <a href="https://github.com/Unionindesign/friend-finder">Github repo</a>
+                        <a href="/api/friends">API link</a>
                     </div>
+
+             
+                    <!-- Modal Structure -->
+                    <div id="resultsModal" class="modal modal-fixed-footer">
+                        <div class="modal-content">
+                        <h4 id ="matchName">Modal Header</h4>
+                        <img id="matchImg" src="http://unionindesign.com/images/bodyshot.png"/>
+                        </div>
+                        <div class="modal-footer">
+                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+                        </div>
+                    </div>
+
                 </div>
             </div>
         </div>
@@ -206,12 +220,56 @@
 
     <!--Import jQuery before materialize.js-->
     <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
-    <script>
-     $(document).ready(function() {
+    <script text="javascript">
+    $(document).ready(function() {
         $('select').material_select();
       });
+    $("#submit").on("click", function(event) {
+        event.preventDefault();
+
+        function validator() {
+            var isValid = true;
+            $(form-control).each(function() {
+                if($(this).val() === "") {
+                    isValid = false;
+                }
+            });
+            return isValid;
+        }
+        if(validator()) {
+            var userData = {
+                name: $("#name").val(),
+                photo: $("#photo").val(),
+                // saySomething: $("#saySomething").val(),
+                scores: [
+                    $("#q1").val(),
+                    $("#q2").val(),
+                    $("#q3").val(),
+                    $("#q4").val(),
+                    $("#q5").val(),
+                    $("#q6").val(),
+                    $("#q7").val(),
+                    $("#q8").val(),
+                    $("#q9").val(),
+                    $("#q10").val()
+                ]
+            };
+
+            var currentUrl = window.location.origin;
+
+            $.post(currentUrl + "/api/friends", userData, function(data) {
+                $("#matchName").text(data.name);
+                $("#matchImg").attr("src", data.photo);
+                $("#resultsModal").modal("toggle");
+            });
+        }
+        else {
+            alert("Please answer all questions before submitting!")
+        }
+      });
+
+
     </script>
   </body>
 </html>
