@@ -1,14 +1,13 @@
 <!DOCTYPE html>
 <html>
-  <head>
+
+<head>
     <!--Import Google Icon Font-->
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <!--Import materialize.css-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-
-
     <!--Let browser know website is optimized for mobile-->
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>FriendFinder</title>
     <style "text/css">
         body {
@@ -16,35 +15,34 @@
             background-image: linear-gradient(62deg, #8EC5FC 0%, #E0C3FC 100%);
         }
     </style>
-  </head>
+</head>
 
-  <body>
-    <div class="container"> 
+<body>
+    <div class="container">
         <div class="row wow animated fadeIn">
             <div class="col s12">
                 <div class="card white darken-1">
-                <div class="card-content">
-                    <span class="card-title">FriendFinder.com</span>
-                    <h5 class ="center">Answer a few questions to find your most compatible friends:</h5>
-                    <!-- FORM -->
-                    <form class="form-control">
-
+                    <div class="card-content">
+                        <span class="card-title">FriendFinder.com</span>
+                        <h5 class="center">Answer a few questions to find your most compatible friends:</h5>
+                        <!-- FORM -->
+                        <form>
                             <div class="row">
                                 <div class="input-field col s6">
-                                    <input placeholder="ex. John Smithington" id="name" type="text" class="validate">
+                                    <input placeholder="ex. John Smithington" id="name" type="text" class="form-control">
                                     <label for="first_name">Name</label>
                                 </div>
                                 <div class="input-field col s6">
-                                        <input placeholder="http://myimage.com" id="photo" type="text" class="validate">
-                                        <label for="photo">Link to your image</label>
+                                    <input placeholder="http://myimage.com" id="photo" type="text" class="form-control">
+                                    <label for="photo">Link to your image</label>
                                 </div>
                             </div>
-                            
+
                             <!-- Start new question 1-->
                             <div class="row">
                                 <h5>Question 1: It bugs me when people get too hung up on something. Calm down!</h5>
                                 <div class="input-field col s4">
-                                    <select class="chosen-select form-control" id="q1">
+                                    <select class="chosen-select" id="q1">
                                         <option value="" disabled selected>Choose your option</option>
                                         <option value="1"> 1 (Strongly Disagree)</option>
                                         <option value="2"> 2</option>
@@ -57,220 +55,221 @@
                             </div>
                             <!-- Start new question 2-->
                             <div class="row">
-                                    <h5>Question 2: I feel like sometimes, you gotta put somebody in line.</h5>
-                                    <div class="input-field col s4">
-                                        <select class="chosen-select form-control" id="q2">
-                                            <option value="" disabled selected>Choose your option</option>
-                                            <option value="1"> 1 (Strongly Disagree)</option>
-                                            <option value="2"> 2</option>
-                                            <option value="3"> 3</option>
-                                            <option value="4"> 4</option>
-                                            <option value="5"> 5 (Strongly Agree)</option>
-                                        </select>
-                                        <label>Scale of 1-5</label>
-                                    </div>
+                                <h5>Question 2: I feel like sometimes, you gotta put somebody in line.</h5>
+                                <div class="input-field col s4">
+                                    <select class="chosen-select" id="q2">
+                                        <option value="" disabled selected>Choose your option</option>
+                                        <option value="1"> 1 (Strongly Disagree)</option>
+                                        <option value="2"> 2</option>
+                                        <option value="3"> 3</option>
+                                        <option value="4"> 4</option>
+                                        <option value="5"> 5 (Strongly Agree)</option>
+                                    </select>
+                                    <label>Scale of 1-5</label>
                                 </div>
+                            </div>
                             <!-- Start new question 3-->
                             <div class="row">
-                                    <h5>Question 3: It's easy for me to express my feelings.</h5>
-                                    <div class="input-field col s4">
-                                        <select class="chosen-select form-control" id="q3">
-                                            <option value="" disabled selected>Choose your option</option>
-                                            <option value="1"> 1 (Strongly Disagree)</option>
-                                            <option value="2"> 2</option>
-                                            <option value="3"> 3</option>
-                                            <option value="4"> 4</option>
-                                            <option value="5"> 5 (Strongly Agree)</option>
-                                        </select>
-                                        <label>Scale of 1-5</label>
-                                    </div>
+                                <h5>Question 3: It's easy for me to express my feelings.</h5>
+                                <div class="input-field col s4">
+                                    <select class="chosen-select" id="q3">
+                                        <option value="" disabled selected>Choose your option</option>
+                                        <option value="1"> 1 (Strongly Disagree)</option>
+                                        <option value="2"> 2</option>
+                                        <option value="3"> 3</option>
+                                        <option value="4"> 4</option>
+                                        <option value="5"> 5 (Strongly Agree)</option>
+                                    </select>
+                                    <label>Scale of 1-5</label>
+                                </div>
                             </div>
                             <!-- Start new question 4-->
                             <div class="row">
-                                    <h5>Question 4: I find it annoying when people talk too much.</h5>
-                                    <div class="input-field col s4">
-                                        <select class="chosen-select form-control" id="q4">
-                                            <option value="" disabled selected>Choose your option</option>
-                                            <option value="1"> 1 (Strongly Disagree)</option>
-                                            <option value="2"> 2</option>
-                                            <option value="3"> 3</option>
-                                            <option value="4"> 4</option>
-                                            <option value="5"> 5 (Strongly Agree)</option>
-                                        </select>
-                                        <label>Scale of 1-5</label>
-                                    </div>
+                                <h5>Question 4: I find it annoying when people talk too much.</h5>
+                                <div class="input-field col s4">
+                                    <select class="chosen-select" id="q4">
+                                        <option value="" disabled selected>Choose your option</option>
+                                        <option value="1"> 1 (Strongly Disagree)</option>
+                                        <option value="2"> 2</option>
+                                        <option value="3"> 3</option>
+                                        <option value="4"> 4</option>
+                                        <option value="5"> 5 (Strongly Agree)</option>
+                                    </select>
+                                    <label>Scale of 1-5</label>
+                                </div>
                             </div>
                             <!-- Start new question 5-->
                             <div class="row">
-                                    <h5>Question 5: I'm usually the center of attention.</h5>
-                                    <div class="input-field col s4">
-                                        <select class="chosen-select form-control" id="q5">
-                                            <option value="" disabled selected>Choose your option</option>
-                                            <option value="1"> 1 (Strongly Disagree)</option>
-                                            <option value="2"> 2</option>
-                                            <option value="3"> 3</option>
-                                            <option value="4"> 4</option>
-                                            <option value="5"> 5 (Strongly Agree)</option>
-                                        </select>
-                                        <label>Scale of 1-5</label>
-                                    </div>
+                                <h5>Question 5: I'm usually the center of attention.</h5>
+                                <div class="input-field col s4">
+                                    <select class="chosen-select" id="q5">
+                                        <option value="" disabled selected>Choose your option</option>
+                                        <option value="1"> 1 (Strongly Disagree)</option>
+                                        <option value="2"> 2</option>
+                                        <option value="3"> 3</option>
+                                        <option value="4"> 4</option>
+                                        <option value="5"> 5 (Strongly Agree)</option>
+                                    </select>
+                                    <label>Scale of 1-5</label>
+                                </div>
                             </div>
                             <!-- Start new question 6-->
                             <div class="row">
-                                    <h5>Question 6: I can be pretty quiet until someone engages me in conversation.</h5>
-                                    <div class="input-field col s4">
-                                        <select class="chosen-select form-control" id="q6">
-                                            <option value="" disabled selected>Choose your option</option>
-                                            <option value="1"> 1 (Strongly Disagree)</option>
-                                            <option value="2"> 2</option>
-                                            <option value="3"> 3</option>
-                                            <option value="4"> 4</option>
-                                            <option value="5"> 5 (Strongly Agree)</option>
-                                        </select>
-                                        <label>Scale of 1-5</label>
-                                    </div>
+                                <h5>Question 6: I can be pretty quiet until someone engages me in conversation.</h5>
+                                <div class="input-field col s4">
+                                    <select class="chosen-select" id="q6">
+                                        <option value="" disabled selected>Choose your option</option>
+                                        <option value="1"> 1 (Strongly Disagree)</option>
+                                        <option value="2"> 2</option>
+                                        <option value="3"> 3</option>
+                                        <option value="4"> 4</option>
+                                        <option value="5"> 5 (Strongly Agree)</option>
+                                    </select>
+                                    <label>Scale of 1-5</label>
+                                </div>
                             </div>
                             <!-- Start new question 7-->
                             <div class="row">
-                                    <h5>Question 7: I spontaneous and make rash decisions. Yolo!</h5>
-                                    <div class="input-field col s4">
-                                        <select class="chosen-select form-control" id="q7">
-                                            <option value="" disabled selected>Choose your option</option>
-                                            <option value="1"> 1 (Strongly Disagree)</option>
-                                            <option value="2"> 2</option>
-                                            <option value="3"> 3</option>
-                                            <option value="4"> 4</option>
-                                            <option value="5"> 5 (Strongly Agree)</option>
-                                        </select>
-                                        <label>Scale of 1-5</label>
-                                    </div>
+                                <h5>Question 7: I spontaneous and make rash decisions. Yolo!</h5>
+                                <div class="input-field col s4">
+                                    <select class="chosen-select" id="q7">
+                                        <option value="" disabled selected>Choose your option</option>
+                                        <option value="1"> 1 (Strongly Disagree)</option>
+                                        <option value="2"> 2</option>
+                                        <option value="3"> 3</option>
+                                        <option value="4"> 4</option>
+                                        <option value="5"> 5 (Strongly Agree)</option>
+                                    </select>
+                                    <label>Scale of 1-5</label>
                                 </div>
+                            </div>
                             <!-- Start new question 8-->
                             <div class="row">
-                                    <h5>Question 8: I tell everyone my life story</h5>
-                                    <div class="input-field col s4">
-                                        <select class="chosen-select form-control" id="q8">
-                                            <option value="" disabled selected>Choose your option</option>
-                                            <option value="1"> 1 (Strongly Disagree)</option>
-                                            <option value="2"> 2</option>
-                                            <option value="3"> 3</option>
-                                            <option value="4"> 4</option>
-                                            <option value="5"> 5 (Strongly Agree)</option>
-                                        </select>
-                                        <label>Scale of 1-5</label>
-                                    </div>
+                                <h5>Question 8: I tell everyone my life story</h5>
+                                <div class="input-field col s4">
+                                    <select class="chosen-select" id="q8">
+                                        <option value="" disabled selected>Choose your option</option>
+                                        <option value="1"> 1 (Strongly Disagree)</option>
+                                        <option value="2"> 2</option>
+                                        <option value="3"> 3</option>
+                                        <option value="4"> 4</option>
+                                        <option value="5"> 5 (Strongly Agree)</option>
+                                    </select>
+                                    <label>Scale of 1-5</label>
+                                </div>
                             </div>
                             <!-- Start new question 9-->
                             <div class="row">
-                                    <h5>Question 9: I'm generally of a trusting nature, I'm willing to give anyone the benefit of the doubt.</h5>
-                                    <div class="input-field col s4">
-                                        <select class="chosen-select form-control" id="q9">
-                                            <option value="" disabled selected>Choose your option</option>
-                                            <option value="1"> 1 (Strongly Disagree)</option>
-                                            <option value="2"> 2</option>
-                                            <option value="3"> 3</option>
-                                            <option value="4"> 4</option>
-                                            <option value="5"> 5 (Strongly Agree)</option>
-                                        </select>
-                                        <label>Scale of 1-5</label>
-                                    </div>
+                                <h5>Question 9: I'm generally of a trusting nature, I'm willing to give anyone the benefit of
+                                    the doubt.</h5>
+                                <div class="input-field col s4">
+                                    <select class="chosen-select" id="q9">
+                                        <option value="" disabled selected>Choose your option</option>
+                                        <option value="1"> 1 (Strongly Disagree)</option>
+                                        <option value="2"> 2</option>
+                                        <option value="3"> 3</option>
+                                        <option value="4"> 4</option>
+                                        <option value="5"> 5 (Strongly Agree)</option>
+                                    </select>
+                                    <label>Scale of 1-5</label>
+                                </div>
                             </div>
                             <!-- Start new question 10 -->
                             <div class="row">
-                                    <h5>Question 10: I don't like getting advice from people I don't know.</h5>
-                                    <div class="input-field col s4">
-                                        <select class="chosen-select form-control" id="q10">
-                                            <option value="" disabled selected>Choose your option</option>
-                                            <option value="1"> 1 (Strongly Disagree)</option>
-                                            <option value="2"> 2</option>
-                                            <option value="3"> 3</option>
-                                            <option value="4"> 4</option>
-                                            <option value="5"> 5 (Strongly Agree)</option>
-                                        </select>
-                                        <label>Scale of 1-5</label>
-                                    </div>
+                                <h5>Question 10: I don't like getting advice from people I don't know.</h5>
+                                <div class="input-field col s4">
+                                    <select class="chosen-select" id="q10">
+                                        <option value="" disabled selected>Choose your option</option>
+                                        <option value="1"> 1 (Strongly Disagree)</option>
+                                        <option value="2"> 2</option>
+                                        <option value="3"> 3</option>
+                                        <option value="4"> 4</option>
+                                        <option value="5"> 5 (Strongly Agree)</option>
+                                    </select>
+                                    <label>Scale of 1-5</label>
+                                </div>
                             </div>
-                        <div class="row">
-                            <button class="waves-effect waves-light btn modal-trigger" data-target="resultsModal" id="submit" href="#resultsModal"><i class="material-icons left">cast_connected</i>Submit</button>
-                        </div>
-                    </form>
-                </div>
+                            <div class="row">
+                                <button class="waves-effect waves-light btn modal-trigger" data-target="resultsModal" id="submit" href="#resultsModal">
+                                    <i class="material-icons left">cast_connected</i>Submit</button>
+                            </div>
+                        </form>
+                    </div>
                     <div class="card-action">
                         <a href="https://github.com/Unionindesign/friend-finder">Github repo</a>
                         <a href="/api/friends">API link</a>
                     </div>
 
-             
                     <!-- Modal Structure -->
                     <div id="resultsModal" class="modal modal-fixed-footer">
                         <div class="modal-content">
-                        <h4 id ="matchName">Modal Header</h4>
-                        <img id="matchImg" src="http://unionindesign.com/images/bodyshot.png"/>
+                            <h4>Your Match:</h4>
+                            <div id="matchName"></div>
+                            <div id="matchImg"></div>
                         </div>
                         <div class="modal-footer">
-                        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Agree</a>
+                            <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat ">Close</a>
                         </div>
                     </div>
-
                 </div>
             </div>
         </div>
     </div>
-                    
 
     <!--Import jQuery before materialize.js-->
-    <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <!-- <script type="text/javascript" src="https://code.jquery.com/jquery-3.2.1.min.js"></script> -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
     <script text="javascript">
-    $(document).ready(function() {
-        $('select').material_select();
-      });
-    $("#submit").on("click", function(event) {
-        event.preventDefault();
-
-        function validator() {
-            var isValid = true;
-            $(form-control).each(function() {
-                if($(this).val() === "") {
-                    isValid = false;
-                }
-            });
-            return isValid;
-        }
-        if(validator()) {
-            var userData = {
-                name: $("#name").val(),
-                photo: $("#photo").val(),
-                // saySomething: $("#saySomething").val(),
-                scores: [
-                    $("#q1").val(),
-                    $("#q2").val(),
-                    $("#q3").val(),
-                    $("#q4").val(),
-                    $("#q5").val(),
-                    $("#q6").val(),
-                    $("#q7").val(),
-                    $("#q8").val(),
-                    $("#q9").val(),
-                    $("#q10").val()
-                ]
-            };
-
-            var currentUrl = window.location.origin;
-
-            $.post(currentUrl + "/api/friends", userData, function(data) {
-                $("#matchName").text(data.name);
-                $("#matchImg").attr("src", data.photo);
-                $("#resultsModal").modal("toggle");
-            });
-        }
-        else {
-            alert("Please answer all questions before submitting!")
-        }
-      });
-
-
+        $(document).ready(function () {
+            $('select').material_select();
+        });
+        $("#submit").on("click", function (event) {
+            event.preventDefault();
+            function validator() {
+                var isValid = true;
+                $("form-control").each(function () {
+                    if ($(this).val() === "") {
+                        isValid = false;
+                    }
+                });
+                return isValid;
+            }
+            if (validator()) {
+                var userData = {
+                    name: $("#name").val(),
+                    photo: $("#photo").val(),
+                    // saySomething: $("#saySomething").val(),
+                    scores: [
+                        $("#q1").val(),
+                        $("#q2").val(),
+                        $("#q3").val(),
+                        $("#q4").val(),
+                        $("#q5").val(),
+                        $("#q6").val(),
+                        $("#q7").val(),
+                        $("#q8").val(),
+                        $("#q9").val(),
+                        $("#q10").val()
+                    ]
+                };
+                console.log("User Data: ", userData);
+                var currentUrl = window.location.origin;
+                $.ajax({
+                    url: currentUrl + "/api/friends",
+                    method: "POST",
+                    data: userData
+                }).done(function (data) {
+                    $("#matchName").text(data.name);
+                    $("#matchImg").attr("src", data.photo);
+                    $("#resultsModal").modal("toggle");
+                });
+            }
+            else {
+                alert("Please answer all questions before submitting!")
+            }
+        });
     </script>
-  </body>
+</body>
+
 </html>
-      
