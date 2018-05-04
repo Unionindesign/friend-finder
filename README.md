@@ -6,3 +6,4 @@ The backend logic is setup as like a dating-style app, where users can enter the
 
 The app is deployed on Heroku here: https://friend-finder-sm.herokuapp.com/
 
+![Alt text](readMeImg.png)
